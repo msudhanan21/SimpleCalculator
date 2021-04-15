@@ -25,7 +25,7 @@ public class CalculatorService {
      */
     public double calculate(int number1, int number2, String operator){
 
-        switch (operator) {
+        switch (operator.toUpperCase()) {
             case "A": return add(number1, number2);
             case "S": return subtract(number1, number2);
             case "M": return multiply(number1, number2);
